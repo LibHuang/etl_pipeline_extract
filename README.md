@@ -10,11 +10,13 @@ I will be using this API and dataset because it provides rich, comprehensive dat
 
 # Architecture 
 
+**Procedure**
+
 The process will entail Extracting from the API with reliability standards seemlessly to S3 bucket.
 
-Step1_S3_setup.py details the loading process to connect to my S3 Bucket.
+1. S3_setup.py details the loading process to connect to my S3 Bucket.
 
-Step2_API_Data_Extraction.py handles the extraction of JSON data from the API and uses io.BytesIO() to create an in-memory buffer for direct upload to S3 via boto3.
+2. API_Data_Extraction.py handles the extraction of JSON data from the API and uses io.BytesIO() to create an in-memory buffer for direct upload to S3 via boto3.
 
 **Features**
 
